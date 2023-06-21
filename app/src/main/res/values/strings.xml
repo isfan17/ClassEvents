@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">ClassEvents</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="full_name">Full Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="login">Login</string>
+    <string name="filter">Filter</string>
+    <string name="add_classroom">Add Class</string>
+    <string name="no_classrooms">No Classes</string>
+    <string name="back">Back</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="add_events">Add Events</string>
+    <string name="classroom_name">Class Name</string>
+    <string name="classroom_day">Class Day</string>
+    <string name="classroom_start_time">Class Start Time</string>
+    <string name="classroom_end_time">Class End Time</string>
+    <string name="submit">Submit</string>
+    <string name="edit_classroom">Edit Class</string>
+    <string name="logout">Logout</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+
+    <string name="msg_have_account">Already have an account?</string>
+    <string name="msg_please_login">Please log in with account that you\'ve created.</string>
+    <string name="msg_no_account">Don\'t have an account?</string>
+    <string name="msg_create_account">Please create an account before you start</string>
+    <string name="msg_field_required">This field is required</string>
+    <string name="msg_input_valid_email">Please input a valid email address</string>
+    <string name="msg_passwords_not_match">Passwords do not match</string>
+    <string name="msg_login_success">Login Successful</string>
+    <string name="msg_register_success">Register Successful</string>
+    <string name="msg_no_classroom">Your classes is empty.\nPlease create a new class.</string>
+    <string name="msg_class_created_success">Class has been created successfully.</string>
+    <string name="msg_manage_classrooms">Let\'s manage your classes!</string>
+    <string name="msg_delete_classroom">Are you sure want to delete this class and its events?</string>
+
+    <string name="dummy_classroom_name">Classroom Name</string>
+    <string name="dummy_classroom_day">Monday, </string>
+    <string name="dummy_classroom_start_time">07:00 </string>
+    <string name="dummy_classroom_end_time">- 09:00</string>
+    <string name="dummy_event_name">Event Name</string>
+    <string name="dummy_event_date">08/08/2045 | </string>
+    <string name="dummy_event_time">10:00</string>
+    <string name="dummy_user_name">Hello, Alexander Jamal</string>
+
+    <string name="value_greetings_name">Hello, %s</string>
+    <string name="value_classroom_day">%s,&#160;</string>
+    <string name="value_classroom_start_time">%s -&#160;</string>
+    <string name="msg_loading">Please wait …</string>
+    <string name="day_ascending">Day Ascending</string>
+    <string name="day_descending">Day Descending</string>
+    <string name="name_a_z">Name A - Z</string>
+    <string name="name_z_a">Name Z - A</string>
+    <string name="newest">Newest</string>
+    <string name="oldest">Oldest</string>
+    <string name="sort_classes_by">Sort Classes By :</string>
+    <string name="event_name">Event Name</string>
+    <string name="event_date">Event Date</string>
+    <string name="event_time">Event Time</string>
+    <string name="add_event">Add Event</string>
+    <string name="edit_event">Edit Event</string>
+    <string name="close">Close</string>
+    <string name="msg_delete_event">Are you sure want to delete this event?</string>
+    <string name="no_events">No events</string>
+    <string name="msg_no_events">You have no events for this classroom</string>
+    <string name="sort_events_by">Sort Events By :</string>
+    <string name="date_ascending">Date Ascending</string>
+    <string name="date_descending">Date Descending</string>
+    <string name="time_ascending">Time Ascending</string>
+    <string name="time_descending">Time Descending</string>
+    <string name="msg_no_classrooms_result">We\'re sorry, but we couldn\'t find\nany classes from your input.</string>
+    <string name="msg_no_events_result">We\'re sorry, but we couldn\'t find\nany events in this class from your input.</string>
+    <string name="no_classrooms_found">No Classes Found</string>
+    <string name="no_events_found">No Events Found</string>
+
+    <string-array name="data_days">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+</resources>

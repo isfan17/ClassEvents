@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="@string/sort_classes_by"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rg_filter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RadioButton
+            android:id="@+id/oldest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/oldest" />
+
+        <RadioButton
+            android:id="@+id/name_az"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name_a_z" />
+
+        <RadioButton
+            android:id="@+id/name_za"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name_z_a"/>
+
+        <RadioButton
+            android:id="@+id/day_asc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/day_ascending"/>
+
+        <RadioButton
+            android:id="@+id/day_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/day_descending"/>
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

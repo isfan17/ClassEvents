@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.isfan17.classevents.ui.views.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@+id/main_navigation"
+            app:popUpToInclusive="true"
+
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@+id/main_navigation"
+            app:popUpToInclusive="true"
+
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.isfan17.classevents.ui.views.auth.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@+id/main_navigation"
+            app:popUpToInclusive="true"
+
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.isfan17.classevents.ui.views.auth.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@+id/main_navigation"
+            app:popUpToInclusive="true"
+
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.isfan17.classevents.ui.views.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_addUpdateClassroomFragment"
+            app:destination="@id/addUpdateClassroomFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_classroomDetailFragment"
+            app:destination="@id/classroomDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_homeFragment_to_searchClassroomsFragment"
+            app:destination="@id/searchClassroomsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/addUpdateClassroomFragment"
+        android:name="com.isfan17.classevents.ui.views.forms.AddUpdateClassroomFragment"
+        android:label="fragment_add_update_classroom"
+        tools:layout="@layout/fragment_add_update_classroom" >
+        <argument
+            android:name="type"
+            app:argType="string" />
+        <argument
+            android:name="classroom"
+            app:argType="com.isfan17.classevents.data.model.Classroom"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/classroomDetailFragment"
+        android:name="com.isfan17.classevents.ui.views.details.ClassroomDetailFragment"
+        android:label="ClassroomDetailFragment" >
+        <action
+            android:id="@+id/action_classroomDetailFragment_to_addUpdateClassroomFragment"
+            app:destination="@id/addUpdateClassroomFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <argument
+            android:name="classroomId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_classroomDetailFragment_to_addUpdateEventFragment"
+            app:destination="@id/addUpdateEventFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_classroomDetailFragment_to_eventDetailFragment"
+            app:destination="@id/eventDetailFragment"/>
+        <action
+            android:id="@+id/action_classroomDetailFragment_to_searchEventsFragment"
+            app:destination="@id/searchEventsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.isfan17.classevents.ui.views.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@+id/main_navigation"
+            app:popUpToInclusive="true"
+
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/searchClassroomsFragment"
+        android:name="com.isfan17.classevents.ui.views.searchs.SearchClassroomsFragment"
+        android:label="fragment_search_classrooms"
+        tools:layout="@layout/fragment_search_classrooms" >
+        <action
+            android:id="@+id/action_searchClassroomsFragment_to_classroomDetailFragment"
+            app:destination="@id/classroomDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/addUpdateEventFragment"
+        android:name="com.isfan17.classevents.ui.views.forms.AddUpdateEventFragment"
+        android:label="fragment_add_update_event"
+        tools:layout="@layout/fragment_add_update_event" >
+        <argument
+            android:name="type"
+            app:argType="string" />
+        <argument
+            android:name="event"
+            app:argType="com.isfan17.classevents.data.model.Event"
+            app:nullable="true" />
+        <argument
+            android:name="classroomId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventDetailFragment"
+        android:name="com.isfan17.classevents.ui.views.details.EventDetailFragment"
+        android:label="fragment_event_detail"
+        tools:layout="@layout/fragment_event_detail" >
+        <action
+            android:id="@+id/action_eventDetailFragment_to_addUpdateEventFragment"
+            app:destination="@id/addUpdateEventFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <argument
+            android:name="event"
+            app:argType="com.isfan17.classevents.data.model.Event" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchEventsFragment"
+        android:name="com.isfan17.classevents.ui.views.searchs.SearchEventsFragment"
+        android:label="fragment_search_events"
+        tools:layout="@layout/fragment_search_events" >
+        <argument
+            android:name="classroom"
+            app:argType="com.isfan17.classevents.data.model.Classroom" />
+        <action
+            android:id="@+id/action_searchEventsFragment_to_eventDetailFragment"
+            app:destination="@id/eventDetailFragment" />
+    </fragment>
+</navigation>
